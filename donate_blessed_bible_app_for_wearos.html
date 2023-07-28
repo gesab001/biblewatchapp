@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+
+<head>
+ <meta name="viewport" content="width=device-width, initial-scale=1"> <!-- Ensures optimal rendering on mobile devices. -->
+ <meta http-equiv="X-UA-Compatible" content="IE=edge" /> <!-- Optimal Internet Explorer compatibility -->
+</head>
+ <script src="https://www.paypalobjects.com/donate/sdk/donate-sdk.js" charset="UTF-8"></script>
+
+<body>
+ <div id="paypal-donate-button-container"></div>
+
+  <script>
+   PayPal.Donation.Button({
+       env: 'production',
+       hosted_button_id: 'TDRN59YFC9WLQ',
+        business: 'giovannisaberon@outlook.com',
+       image: {
+           src: 'https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif',
+           title: 'PayPal - The safer, easier way to pay online!',
+           alt: 'Donate with PayPal button'
+       },
+       onComplete: function (params) {
+	      var tx = params.tx; //Transaction ID for the transaction
+          var st = params.st;//	Transaction status
+          var amount = params.amt;//	Transaction amount
+          var cc = params.cc;//	Currency code
+          var cm = params.cm;//	Custom message
+          var item_number = params.item_number;//	Purpose configured for the transaction
+          var item_name = params.item_name;
+		  console.log(params);
+		  console.log(tx);
+		  console.log(st);
+		  console.log(amount);
+		  console.log(cc);
+		  console.log(cm);
+		  console.log(item_name);
+		  console.log(item_number);
+
+
+           // Your onComplete handler
+       },
+   }).render('#paypal-donate-button-container');
+</script>
+</body>

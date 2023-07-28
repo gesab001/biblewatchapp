@@ -1,86 +1,68 @@
-
-<html>
-
+<!DOCTYPE html>
+<html lang="en-US">
+ 
 <head>
+ <title> Bible Watch</title>
  <meta name="viewport" content="width=device-width, initial-scale=1"> <!-- Ensures optimal rendering on mobile devices. -->
  <meta http-equiv="X-UA-Compatible" content="IE=edge" /> <!-- Optimal Internet Explorer compatibility -->
- <link rel="stylesheet" href="style.css">
- <script src="https://www.paypalobjects.com/donate/sdk/donate-sdk.js" charset="UTF-8"></script>
+ <link rel="stylesheet" href="style1.css">
 
 </head>
 
  
- <body onload="loadLanguages()">
+<body>
+
+
+<div class="donate_paypal">       
+    <div id="google_translate_element"></div>
+
+<p class="heading">
+Hi, my name is Giovanni Saberon. I am the sole developer for Bible Watch apps for the Samsung Galaxy watch. I spend full time developing apps for the Lord.  </p>
+
+<p class="heading">If my apps have been a blessing to you and would like to show your appreciation financially, you can do it through Paypal.
+</p>
+
+<p class="heading">Please send your donations to my paypal account below:</p>
+
+<p class="heading">giovannisaberon@outlook.com</p>
+
+
+<p class="heading">Alternatively, you can directly deposit into my following bank account:
+</p>
+
+<p class="heading">
+<br>Beneficiary name: Giovanni E. Saberon
+<br>Beneficiary account: 12-3071-0367268-00 
+<br>IBAN: 12-3071-0367268-00
+<br>SWIFT Code: ASBBNZ2A
+<br>BIC (Bank Identifier Code): ASBBNZ2A
+
+<br>Beneficiary Bank Address: ASB Bank Limited, 12 Jellicoe Street, Auckland Central, Auckland 1010, New Zealand
+
+
+</p>
+<p>If you have any comments, questions, please email me at: 144000giovanni@gmail.com</p>
+<p class="heading">Thanks.  And may God bless you.</p>
+
+
+</div>
  
-                   <select id="languages" onchange="changeLanguage()"></select>
-                   
-
-                    <div class="donate_paypal">
-                        <form id="paypal-form" action="https://www.paypal.com/cgi-bin/webscr" method="post">
-
-                            <h4 class="heading" id="donateWithPaypal">Donate with PayPal</h4>       
-
-                            <div class="donate-content-outer field">
-                                <div id="enterAmount" class="amount_label heading">Enter amount ($)</div>
-                                <div class="donate-content">
-                                    <input type="text" id="amount" name="amount" size="50%" title="Other Amount" value="">
-                                </div>
-                            </div>
-                            
-                            <div class="currency field">
-                                <div id="currency" class="heading">Currency:</div>
-                                <div class="donate-content">
-                                    <select id="currency_code" name="currency_code">
-                                        <option value="USD">US Dollars - USD</option>
-                                        <option value="CAD">Canadian Dollar - CAD</option>
-                                        <option value="EUR">Euro - EUR</option>
-                                        <option value="GBP">British Pound - GBP</option>
-                                        <option value="AUD">Australian Dollar - AUD</option>
-                                        <option value="NZD">New Zealand Dollar - NZD</option>
-                                        <option value="JPY">Japanese Yen - JPY</option>
-                                        <option value="MXN">Mexican Peso - MXN</option>
-                                        <option value="BRL">Brazilian Real - BRL</option>
-                                        <option value="CHF">Swiss Franc - CHF</option>
-                                        <option value="HKD">Hong Kong Dollar - HKD</option>
-                                        <option value="SGD">Singapore Dollar - SGD</option>
-                                        <option value="SEK">Swedish Krona - SEK</option>
-                                        <option value="DKK">Danish Krone - DKK</option>
-                                        <option value="PLN">Polish Zloty - PLN</option>
-                                        <option value="NOK">Norwegian Krone - NOK</option>
-                                        <option value="HUF">Hungarian Forint - HUF</option>
-                                        <option value="CZK">Czech Koruna - CZK</option>
-                                        <option value="ILS">Israeli New Shekel - ILS</option>
-                                        <option value="MYR">Malaysian Ringgit - MYR</option>
-                                        <option value="PHP">Philippine Peso - PHP</option>
-                                        <option value="TWD">New Taiwan Dollar - TWD</option>
-                                        <option value="THB">Thai Baht - THB</option>
-                                        <option value="TRY">Turkish Lira - TRY</option>
-                                        <option value="RUB">Russian ruble - RUB</option>
-                                    </select>
-                                </div>
-                            </div>
-                           
-                            <div class="donate-btn field">
-                                <input type="hidden" name="cmd" value="_donations">
-                                <input type="hidden" name="business" value="giovannisaberon@outlook.com">
-                                <input type="hidden" name="no_shipping" value="1">
-                                <input id="instructions" type="hidden" name="cn" value="Add your instructions to Giovanni Saberon">
-                                <input type="hidden" name="no_note" value="0">
-                                <input type="hidden" name="lc" value="US">
-                                <input type="hidden" name="bn" value="PP-DonationsBF:btn_donateCC_LG.gif:NonHostedGuest">
-                                <input id="donationLinkButton" type="image" src="" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
-                            </div>
-							
-							
-                            
-                        </form>
-                    </div>
-
-
-
+    <script type="text/javascript">
+        function googleTranslateElementInit() {
+            new google.translate.TranslateElement(
+                {pageLanguage: 'en'},
+                'google_translate_element'
+            );
+        }
+    </script>
+ 
+    <script type="text/javascript"
+            src=
+"https://translate.google.com/translate_a/element.js?
+cb=googleTranslateElementInit">
+    </script>
+ 
 
 </body>
-
- <script src="app.js" charset="UTF-8"></script>
-
+ 
 </html>
